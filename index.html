@@ -25,7 +25,7 @@
             document.write("Subtotal: $" + subtotal);
             document.write("Discount: $" + discount);
 
-            tax = subtotal * 0.0625 * 1.00;
+            tax = toFixed(subtotal * 0.0625 *);
             total = subtotal + tax;
 
             document.write("Tax: $" + tax);
