@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Joe's Hotdogs Online Orders</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <script language="javascript">
+
+            hotdogs = parseInt(prompt("How many hotdogs do you want?", "0"));
+            fries = parseInt(prompt("How many orders of french fries do you want?", "0"));
+            drinks = parseInt(prompt("How many drinks do you want?", "0"));
+
+            subtotal = hotdogs * 3.75 + fries * 2.00 + drinks * 1.80;
+            discount = 0;
+
+            if (subtotal >= 20)
+            {
+                discount = subtotal * 0.1;
+                subtotal *= 0.9;                
+            }
+
+            tax = subtotal * 0.0625;
+            total = subtotal + tax;
+        
+        </script>
+    </body>
+</html>
