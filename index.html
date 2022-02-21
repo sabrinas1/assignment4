@@ -11,6 +11,8 @@
             fries = parseInt(prompt("How many orders of french fries do you want?", "0"));
             drinks = parseInt(prompt("How many drinks do you want?", "0"));
 
+            document.write("You have ordered: " + hotdogs + " hotdogs, " + fries + " fries, and " + drinks + " drinks");
+
             subtotal = hotdogs * 3.75 + fries * 2.00 + drinks * 1.80;
             discount = 0;
 
@@ -19,9 +21,15 @@
                 discount = subtotal * 0.1;
                 subtotal *= 0.9;                
             }
+            
+            document.write("Subtotal: $" + subtotal);
+            document.write("Discount: $" + discount);
 
             tax = subtotal * 0.0625;
             total = subtotal + tax;
+
+            document.write("Tax: $" + tax);
+            document.write("Total: $" + total);
         
         </script>
     </body>
