@@ -18,15 +18,15 @@
 
             if (subtotal >= 20)
             {
-                discount = toFixed(subtotal * 0.1);
+                discount = (subtotal * 0.1).toFixed(2);
                 subtotal *= 0.9;
-                subtotal = toFixed(subtotal);                
+                subtotal = subtotal.toFixed(2);                
             }
             
             document.write("Subtotal: $" + subtotal);
             document.write("Discount: $" + discount);
 
-            tax = toFixed(subtotal * 0.0625);
+            tax = (subtotal * 0.0625).toFixed(2);
             total = subtotal + tax;
 
             document.write("Tax: $" + tax);
