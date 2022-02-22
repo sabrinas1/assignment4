@@ -33,14 +33,14 @@
         <p id="right"></p>
 
         <script language="javascript">
-            document.write("Subtotal: $" + subtotal);
-            document.write("Discount: $" + discount);
 
             tax = (subtotal * 0.0625).toFixed(2);
             total = (subtotal + tax).toFixed(2);
 
-            document.getElementById("right").innerHTML="Tax: $" + tax + 
-                                                        "<br>Total: $" + total;
+            document.getElementById("right").innerHTML ="Subtotal: $" + subtotal
+                                                        + "<br>Discount: $" + discount
+                                                        + "<br>Tax: $" + tax
+                                                        + "<br>Total: $" + total;
         
         </script>
     </body>
