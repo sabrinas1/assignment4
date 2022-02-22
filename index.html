@@ -26,13 +26,12 @@
                 subtotal = subtotal.toFixed(2);                
             }
             
-            document.write("Subtotal: $" + subtotal);
-            document.write("Discount: $" + discount);
+            document.write("Subtotal: $" + subtotal + "<br>Discount: $" + discount);
 
             tax = (subtotal * 0.0625).toFixed(2);
             total = (subtotal + tax).toFixed(2);
 
-            document.write("Tax: $" + tax + "<br>Total: $" + total);
+            document.write("<br>Tax: $" + tax + "<br>Total: $" + total);
         
         </script>
     </body>
