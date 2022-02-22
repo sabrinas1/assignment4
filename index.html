@@ -28,7 +28,7 @@
 
             tax = subtotal * 0.0625;
             tax = tax.toFixed(2);
-            total = subtotal + tax;
+            total = parseFloat(subtotal) + parseFloat(tax);
 
             document.write("Subtotal: $" + subtotal + "<br>Discount: $" 
                             + discount + "<br>Tax: $" + tax + "<br>Total: $" 
