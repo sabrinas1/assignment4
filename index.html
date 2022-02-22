@@ -18,8 +18,7 @@
                             + fries + " order(s) of french fries<br>" 
                             + drinks + " drink(s)<br>";
 
-            init_subtotal = parseFloat(hotdogs * 3.75 + fries * 2.00 + drinks * 1.80);
-            init_subtotal = init_subtotal.toFixed(2);
+            subtotal = hotdogs * 3.75 + fries * 2.00 + drinks * 1.80;
             discount = 0.00;
 
             if (subtotal >= 20)
@@ -34,8 +33,8 @@
             total = parseFloat(subtotal) + parseFloat(tax);
             total = total.toFixed(2);
 
-            document.getElementById("2").innerHTML ="Subtotal: $" + init_subtotal 
-                            + "<br>Discount: -$" + discount 
+            document.getElementById("2").innerHTML ="Subtotal: $" + subtotal 
+                            + "<br>Discount: $" + discount 
                             + "<br>Tax: $" + tax 
                             + "<br>Total: $" + total;
         
