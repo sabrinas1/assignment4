@@ -1,1 +1,5 @@
-body {display: block; color: #000; font-size: 18}
+body {display: block; color: #000; font-size: 20px; background-color: #FFF}
+
+p {display: inline-block; width: 49%}
+
+#right {background-color: #E5E5E5;}
