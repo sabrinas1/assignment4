@@ -18,7 +18,8 @@
                             + fries + " order(s) of french fries<br>" 
                             + drinks + " drink(s)<br>";
 
-            init_subtotal = hotdogs * 3.75 + fries * 2.00 + drinks * 1.80;
+            init_subtotal = parseFloat(hotdogs * 3.75 + fries * 2.00 + drinks * 1.80);
+            init_subtotal = init_subtotal.toFixed(2);
             discount = 0.00;
 
             if (subtotal >= 20)
